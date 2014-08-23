@@ -2,6 +2,11 @@
 
 class GradeUnitTest extends PHPUnit_Framework_TestCase {
 
+	function test_score_800_should_get_grade_F() {
+		$grade = new Grade();
+		$this->assertEquals("F", $grade->tad(800));
+	}
+
 	function test_score_80_should_get_grade_A() {
 		$grade = new Grade();
 		$this->assertEquals("A", $grade->tad(80));

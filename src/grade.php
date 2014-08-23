@@ -18,4 +18,9 @@ class Grade {
 
 }
 
+$grade = new Grade();
+$score = $_POST["score"];
+echo "You got grade = ". $grade->tad($score);
+
+
 ?>

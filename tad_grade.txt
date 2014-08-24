@@ -1,0 +1,25 @@
+*** Settings ***
+Library          Selenium2Library
+Suite Setup      Open Browser    http://gentle-hollows-4182.herokuapp.com/src/
+Suite Teardown   Close Browser
+Test Setup       Go To    http://gentle-hollows-4182.herokuapp.com/src/
+
+*** Variables ***
+
+*** Testcases ***
+Grade A
+	Input Text    score    80
+	Click Button    Convert
+	Wait Until Page Contains    You got grade = A
+
+Grade B
+	Input Text    score    70
+	Click Button    Convert
+	Wait Until Page Contains    You got grade = B
+
+Grade C
+	Input Text    score    60
+	Click Button    Convert
+	Wait Until Page Contains    You got grade = C
+
+*** Keywords ***

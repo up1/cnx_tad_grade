@@ -12,6 +12,12 @@ Grade A
 	Click Button    Convert
 	Wait Until Page Contains    You got grade = A
 
+Grade A2
+	Input Text    score    85
+	Click Button    Convert
+	Wait Until Page Contains    You got grade = A
+
+
 Grade B
 	Input Text    score    70
 	Click Button    Convert
